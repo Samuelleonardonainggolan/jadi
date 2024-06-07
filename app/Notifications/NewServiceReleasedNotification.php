@@ -3,7 +3,6 @@
 namespace App\Notifications;
 
 use App\Models\Service;
-use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -27,11 +26,11 @@ class NewServiceReleasedNotification extends Notification implements ShouldQueue
     {
         return (new MailMessage)
             ->subject($this->service->name . ' now available at Salon Bliss!')
-            ->from('info@gurningfield.com')
+            ->from('info@gbookingfield.com')
             ->greeting('Hello ' . $notifiable->name . '!')
             ->line('Big News! 🎉')
             ->line('Introducing ' . $this->service->name . ' - our latest service!')
-            ->line('✨ Priced at LKR ' .  number_format($this->service->price, 2, '.', ',') . ' ✨')
+            ->line('✨ Priced at LKR ' . number_format($this->service->price, 2, '.', ',') . ' ✨')
             ->line('💆‍♀️ The benefits: ' . $this->service->benefits)
             ->action('Book Now', url('/services/' . $this->service->slug))
             ->line('Thank you for choosing Salon Bliss!');

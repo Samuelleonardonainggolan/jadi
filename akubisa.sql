@@ -312,9 +312,6 @@ CREATE TABLE `password_reset_tokens` (
 -- Dumping data untuk tabel `password_reset_tokens`
 --
 
-INSERT INTO `password_reset_tokens` (`email`, `token`, `created_at`) VALUES
-('yosiagurning@gmail.com', '$2y$10$ZX5J9u.aiEg3eXjS9.ZRiuMPCd8GeOC4Ee7AJcrs94owgI2HLCnvq', '2024-05-22 06:02:58');
-
 -- --------------------------------------------------------
 
 --
@@ -505,11 +502,6 @@ CREATE TABLE `users` (
 --
 -- Dumping data untuk tabel `users`
 --
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `phone_number`, `remember_token`, `current_team_id`, `profile_photo_path`, `status`, `created_at`, `updated_at`, `role_id`) VALUES
-(17, 'Yosia Yehezkiel Gurning', 'yosiagurning@gmail.com', NULL, '$2y$10$F/Lps72Yob/mpLMvP000puhOE3xRJ7xiAd2eO2eItMP9u0drl91k6', NULL, NULL, NULL, '0812609704', NULL, NULL, NULL, 1, '2024-05-21 15:26:41', '2024-05-21 15:26:41', 1),
-(19, 'benaya', 'benaya@gmail.com', NULL, '$2y$10$YptJnkBMVUDMMDylByIyQOp3kgwAIxTxECZT6eY77OwinnKTT7gKi', NULL, NULL, NULL, '1234567890', NULL, NULL, NULL, 1, '2024-05-22 06:13:34', '2024-05-22 06:13:34', 3),
-(20, 'yudi', 'yudi@gmail.com', NULL, '$2y$10$quA/Jb3ad/bu6tjQeoqnTu9wPcXkMRRBl/Urr/B0lu5EB5k6qJbsO', NULL, NULL, NULL, '0987654321', NULL, NULL, NULL, 1, '2024-05-22 06:44:31', '2024-05-22 06:44:31', 2);
 
 --
 -- Indexes for dumped tables

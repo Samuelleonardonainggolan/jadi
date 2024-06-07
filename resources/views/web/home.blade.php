@@ -14,7 +14,7 @@
 -->
 
 <section
-class="relative bg-cover bg-center bg-no-repeat " style="background-image: url({{ asset('images/salon1.png') }}" ;>
+class="relative bg-cover bg-center bg-no-repeat " style="background-image: url({{ asset('images/bad.jpg') }}" ;>
 <div class="absolute inset-0 bg-gradient-to-r from-white/95 to-white/0 ltr:bg-gradient-to-r rtl:bg-gradient-to-l sm:bg-transparent sm:from-white/95 sm:to-white/0"></div>
 
 <div
